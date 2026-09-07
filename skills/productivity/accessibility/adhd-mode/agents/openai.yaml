@@ -1,0 +1,6 @@
+interface:
+  display_name: "ADHD Mode"
+  short_description: "以精簡、易掃讀的方式呈現回答"
+  default_prompt: "Use $adhd-mode to minimize reading effort and cognitive load."
+policy:
+  allow_implicit_invocation: false

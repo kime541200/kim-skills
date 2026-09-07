@@ -1,0 +1,6 @@
+interface:
+  display_name: "Git Commit"
+  short_description: "檢查 Git 改動、草擬訊息，依已授權範圍提交"
+  default_prompt: "使用 $git-commit 幫我提交這些改動"
+policy:
+  allow_implicit_invocation: true

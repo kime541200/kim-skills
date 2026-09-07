@@ -1,0 +1,6 @@
+interface:
+  display_name: "Git Report"
+  short_description: "依據 Git commits 產生白話週報與開發進度報告"
+  default_prompt: "使用 $git-report 依 Git commits 整理本週的白話進度報告。"
+policy:
+  allow_implicit_invocation: true

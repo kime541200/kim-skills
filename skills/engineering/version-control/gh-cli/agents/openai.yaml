@@ -1,0 +1,5 @@
+interface:
+  display_name: "GitHub CLI"
+  short_description: "使用 gh 操作 GitHub 並驗證結果"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Python src-layout"
+  short_description: "設計或遷移 Python 套件佈局並驗證安裝"
+policy:
+  allow_implicit_invocation: false

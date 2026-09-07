@@ -1,0 +1,5 @@
+interface:
+  display_name: "AGY Delegate"
+  short_description: "委派大量資料的機械盤點並覆核證據"
+policy:
+  allow_implicit_invocation: true

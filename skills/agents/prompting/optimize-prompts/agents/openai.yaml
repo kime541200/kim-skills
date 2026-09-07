@@ -1,0 +1,6 @@
+interface:
+  display_name: "Prompt Optimizer"
+  short_description: "Audit and improve prompt artifacts with minimal edits"
+  default_prompt: "Use $optimize-prompts to audit this prompt artifact and make only behavior-changing improvements."
+policy:
+  allow_implicit_invocation: true

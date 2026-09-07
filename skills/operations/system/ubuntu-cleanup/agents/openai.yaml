@@ -1,0 +1,6 @@
+interface:
+  display_name: "Ubuntu Cleanup"
+  short_description: "安全盤點並清理 Ubuntu 的快取與可重建舊資料"
+  default_prompt: "使用 $ubuntu-cleanup 盤點這台 Ubuntu，列出可安全清理的舊資料並等待我的確認。"
+policy:
+  allow_implicit_invocation: false

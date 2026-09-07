@@ -1,0 +1,5 @@
+interface:
+  display_name: "GitLab CLI"
+  short_description: "使用 glab 操作 GitLab 並驗證結果"
+policy:
+  allow_implicit_invocation: true

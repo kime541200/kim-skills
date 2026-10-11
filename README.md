@@ -32,6 +32,8 @@ Personal agent skills, organized as an installable catalog for the open Agent Sk
 
 - **Accessibility**
   - `adhd-mode` — reduce reading effort and cognitive load.
+- **Documentation**
+  - `to-manual` — turn a session's operations into a reusable operation manual.
 
 ## Install and synchronize
 

@@ -1,0 +1,6 @@
+interface:
+  display_name: "To Manual"
+  short_description: "將本次 session 的操作整理成通用操作手冊"
+  default_prompt: "Use $to-manual to turn this session's operations into a reusable manual."
+policy:
+  allow_implicit_invocation: false

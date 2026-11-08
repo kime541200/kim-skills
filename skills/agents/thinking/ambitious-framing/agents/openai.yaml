@@ -1,0 +1,6 @@
+interface:
+  display_name: "Ambitious Framing"
+  short_description: "以高度、深度、廣度與密涅瓦思考習慣重構任務"
+  default_prompt: "Use $ambitious-framing to elevate this task across altitude, depth, and breadth with Minerva Habits of Mind."
+policy:
+  allow_implicit_invocation: false

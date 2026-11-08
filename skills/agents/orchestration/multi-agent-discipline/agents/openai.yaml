@@ -1,0 +1,5 @@
+interface:
+  display_name: "Multi-Agent Discipline"
+  short_description: "把關多 Agent 派工必要性、結構化交接與分層驗證"
+policy:
+  allow_implicit_invocation: true

@@ -11,6 +11,8 @@ Personal agent skills, organized as an installable catalog for the open Agent Sk
 - **Orchestration**
   - `agy-delegate` — delegate large mechanical corpus sweeps to Antigravity CLI.
   - `multi-agent-discipline` — gate multi-agent delegation and enforce structured handoffs and layered verification.
+- **Workspace**
+  - `setup-home-repo` — turn a directory of sibling repos into a Home Repo for multi-repo agent work.
 - **Prompting**
   - `optimize-prompts` — audit and improve reusable prompt artifacts.
 - **Thinking**

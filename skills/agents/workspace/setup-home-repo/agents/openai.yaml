@@ -1,0 +1,6 @@
+interface:
+  display_name: "Setup Home Repo"
+  short_description: "將多個獨立 repo 的工作區建立為 Home Repo（agent 啟動基地）"
+  default_prompt: "Use $setup-home-repo to turn this workspace of sibling repos into a Home Repo."
+policy:
+  allow_implicit_invocation: false

@@ -8,9 +8,9 @@ fi
 
 FIRST_LINE=$(echo "$MESSAGE" | head -n 1)
 
-PATTERN="^(feat|fix|docs|style|refactor|perf|test|chore)(\([a-z0-9._-]+\))?: [^[:space:]].{0,71}$"
+PATTERN="^(feat|fix|docs|style|refactor|perf|test|chore)(\([a-z0-9._-]+\))?: [^[:space:]].*$"
 
-if [[ "$FIRST_LINE" =~ $PATTERN && ! "$FIRST_LINE" =~ [[:space:]]$ && ! "$FIRST_LINE" =~ \.$ ]]; then
+if [[ ${#FIRST_LINE} -le 72 && "$FIRST_LINE" =~ $PATTERN && ! "$FIRST_LINE" =~ [[:space:]]$ && ! "$FIRST_LINE" =~ \.$ ]]; then
     echo "Valid commit message format"
     exit 0
 else

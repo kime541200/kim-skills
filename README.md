@@ -6,15 +6,10 @@ Personal agent skills, organized as an installable catalog for the open Agent Sk
 
 ### Agents
 
-- **Migration**
-  - `migrate-to-codex` — migrate supported Claude Code configuration and artifacts to Codex.
 - **Orchestration**
-  - `agy-delegate` — delegate large mechanical corpus sweeps to Antigravity CLI.
   - `multi-agent-discipline` — gate multi-agent delegation and enforce structured handoffs and layered verification.
 - **Workspace**
   - `setup-home-repo` — turn a directory of sibling repos into a Home Repo for multi-repo agent work.
-- **Prompting**
-  - `optimize-prompts` — audit and improve reusable prompt artifacts.
 - **Thinking**
   - `ambitious-framing` — reframe tasks across altitude, depth, and breadth using Minerva Habits of Mind.
 
@@ -23,10 +18,7 @@ Personal agent skills, organized as an installable catalog for the open Agent Sk
 - **Python**
   - `python-src-layout` — design or migrate installable Python packages to src-layout.
 - **Version control**
-  - `gh-cli` — operate GitHub through `gh`.
-  - `gitlab-cli` — operate GitLab through `glab`.
   - `git-commit` — prepare and create scoped Git commits.
-  - `git-report` — generate progress reports from Git history.
 
 ### Operations
 
@@ -61,7 +53,7 @@ npx --yes /home/kim/workspace/myproject/skills/kim-skills install --all
 Or install a selected set:
 
 ```bash
-npx --yes /home/kim/workspace/myproject/skills/kim-skills install gh-cli git-commit
+npx --yes /home/kim/workspace/myproject/skills/kim-skills install git-commit to-manual
 ```
 
 After editing the repository, synchronize installed copies:

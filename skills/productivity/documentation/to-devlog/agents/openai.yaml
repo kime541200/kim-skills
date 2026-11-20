@@ -1,0 +1,6 @@
+interface:
+  display_name: "To Devlog"
+  short_description: "將本次 session 的改動動機、決策與取捨整理成專案 devlog"
+  default_prompt: "Use $to-devlog to record why this session's changes were made."
+policy:
+  allow_implicit_invocation: false

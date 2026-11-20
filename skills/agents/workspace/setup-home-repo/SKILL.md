@@ -1,6 +1,6 @@
 ---
 name: setup-home-repo
-description: Turn a directory of sibling repos into a Home Repo, the agent launch base holding shared skills, docs and pointers to the others. Use when the user wants to set up, migrate to, or repair a multi-repo agent workspace.
+description: Turn a directory of sibling repos into a Home Repo holding shared skills, docs, and pointers.
 disable-model-invocation: true
 ---
 
@@ -20,10 +20,10 @@ Present the survey and the planned changes (steps 3-6). Ask only what the survey
 
 ## 3. Root `.gitignore` and clone script
 
-- `.gitignore` lists every child directory plus `.env`, `tmp/`, `.scratch/`. Confirm `.env` is ignored before step 6's `git add .`.
+- `.gitignore` lists every child directory plus `.env`, `tmp/`, `.scratch/`.
 - Add `scripts/clone-all.sh` from [templates/clone-all.sh](templates/clone-all.sh), filling `OWNER` and the repo list. Make it executable.
 
-Done when `git status` (after step 6's `git init`) shows no child directory.
+Done when `.gitignore` lists every child directory plus `.env`, `tmp/`, and `.scratch/`, and `scripts/clone-all.sh` is executable with the full repo list.
 
 ## 4. Root `AGENTS.md`
 
@@ -42,7 +42,7 @@ Done when every skill exists in exactly one place and no child `.gitignore` hide
 ## 6. Publish
 
 1. `git init` the root and `git add .`.
-2. Show `git status -s` to the user and wait for confirmation of the file list.
+2. Show `git status -s` to the user (confirming no child directory or `.env` appears) and wait for confirmation of the file list.
 3. Commit, then `gh repo create <owner>/<name> --private --source=. --remote=origin --push`.
 
 Done when the remote shows the commit and the report below is given.

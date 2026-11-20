@@ -10,7 +10,7 @@ disable-model-invocation: true
 
 ## 1. 檢查專案
 
-讀取 pyproject.toml、build backend、套件與 CLI entry points、測試及 CI 的安裝方式。沿用既有工具與依賴；區分單次腳本、應用程式與需打包的套件。src-layout 是佈局選擇，並非所有 Python 檔案都必須放在 src 下。
+讀取 pyproject.toml、build backend、套件與 CLI entry points、測試及 CI 的安裝方式。沿用既有工具與依賴；區分單次腳本、應用程式與需打包的套件。src-layout 是佈局選擇，並非所有 Python 檔案都必須放在 src 下；需要評估 `src-layout` 與 `flat-layout` 取捨或免安裝直接執行特例時，先讀 `references/src-layout-vs-flat-layout.rst`。
 
 完成條件：佈局變更在授權範圍內，且已識別受影響的安裝、import、CLI 與測試路徑。
 
@@ -46,6 +46,8 @@ packages = ["src/my_package"]
 
 只套用專案正在使用的 backend 設定，按目前版本文件與既有用法核對。使用專案既有安裝流程更新環境；例如 uv 環境可使用 `uv pip install -e .`。
 
+完成條件：目標結構、backend 設定與受影響的 entry points／import 已更新，並完成開發環境安裝。
+
 ## 3. 執行與驗證
 
 - 上述含 main.py 的範例使用 `python -m my_package.main`。只有已定義 `__main__.py` 時才用 `python -m my_package`；已安裝的 console entry point 優先沿用。
@@ -55,5 +57,3 @@ packages = ["src/my_package"]
 - 不預設加入 sys.path hack；使用者明確要求免安裝執行時，再評估直接原始碼路線。
 
 完成條件：授權的佈局變更完成，相關安裝、import、CLI 與測試可運作；檢查通過後不因一般小修改反覆做整套打包驗證。
-
-佈局取捨與直接執行特例見 `references/src-layout-vs-flat-layout.rst`。

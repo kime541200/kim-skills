@@ -29,7 +29,7 @@ Step up one level of abstraction from the requested artifact to the decision or 
 
 Done when the goal is stated as a verifiable decision or system outcome rather than a surface deliverable.
 
-## 3. Deepen to expert grounding (`#infoneeded`, `#sourcequality`, `#plausibility`, `#testability`)
+## 3. Deepen to expert grounding (`#infoneeded`, `#sourcequality`, `#plausibility`, `#estimation`, `#correlation`, `#testability`)
 
 Enforce domain-expert rigor before generating solutions:
 

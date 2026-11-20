@@ -1,12 +1,12 @@
 ---
 name: multi-agent-discipline
-description: Gate multi-agent delegation and enforce subagent role separation, structured handoffs, and layered verification. Use when deciding whether to spawn subagents or stay single-agent; designing or executing a multi-agent workflow; packaging context for a subagent handoff; splitting verification between deterministic checks and LLM evaluators; or auditing an agent pipeline for unnecessary complexity, token cost, or retry loops.
+description: Gate multi-agent delegation: decide single-agent vs. subagents, isolate roles, package structured handoffs, layer deterministic-first verification, or audit an agent pipeline for complexity, cost, or retry loops.
 disable-model-invocation: false
 ---
 
 # Multi-Agent Discipline
 
-Default to a **single agent**. Over 60% of tasks execute faster, cheaper, and more reliably in one context window without coordination tax or cross-agent error amplification. Spawn multiple agents only when the task passes the necessity gate, and enforce strict role, handoff, and verification discipline when it does.
+Default to a **single agent**. Spawn multiple agents only when a necessity gate holds, and enforce strict role, handoff, and verification discipline when it does.
 
 ## 1. Apply the multi-agent necessity gate
 
